@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My first blog'
 pubDate: 2023-08-09
 description: '这是我 Banmao 播客的第一篇文章。'
@@ -10,8 +11,6 @@ tags: ['astro', 'blogging', 'learning in public']
 ---
 
 # 我的第一篇播客文章
-
-发表于：2022-07-01
 
 欢迎来到我学习关于 Astro 的新播客！在这里，我讲分享我简历新网站的学习历程。
 
