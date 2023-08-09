@@ -1,12 +1,29 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+
+const pageTitle = 'About Me';
+
+const skills = ['React', 'Vue', 'Astro', 'Go']
+
+const happy = true;
+const finished = false;
+const goal = 3;
 ---
 
 <Layout
-	title="About Me"
+	title={pageTitle}
 	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
+	pubDate={new Date('August 09 2023')}
 	heroImage="/blog-placeholder-about.jpg"
 >
 	<h2>Blog Next Version</h2>
+
+	<p>My skills: </p>
+	<ul>
+		{skills.map((skill) => <li>{skill}</li>)}
+	</ul>
+
+	{happy && <p>我非常乐意学习Astro!</p>}
+	{finished && <p>I am finished to this tortal!</p>}
+	{goal === 3 ? <p>my goal is limit 3 days to done</p> : <p>my goal is not 3 days</p>}
 </Layout>
